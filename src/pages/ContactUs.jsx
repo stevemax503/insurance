@@ -56,10 +56,40 @@ function ChevronIcon() {
 
 export default function ContactUs() {
   const [sent, setSent] = useState(false)
+  const [sending, setSending] = useState(false)
+  const [error, setError] = useState('')
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault()
-    setSent(true)
+    setError('')
+    setSending(true)
+
+    const form = new FormData(e.currentTarget)
+    const payload = {
+      name: String(form.get('name') || '').trim(),
+      email: String(form.get('email') || '').trim(),
+      phone: String(form.get('phone') || '').trim(),
+      national_id: String(form.get('national_id') || '').trim(),
+      product: String(form.get('product') || '').trim(),
+      message: String(form.get('message') || '').trim(),
+    }
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
+      const data = await response.json().catch(() => ({}))
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send your enquiry.')
+      }
+      setSent(true)
+    } catch (err) {
+      setError(err.message || 'Failed to send your enquiry.')
+    } finally {
+      setSending(false)
+    }
   }
 
   return (
@@ -185,12 +215,15 @@ export default function ContactUs() {
                       </span>
                       <textarea name="message" maxLength={2000} required rows={6} />
                     </label>
+                    {error ? <p className="contact-form-error">{error}</p> : null}
                     <div className="contact-actions">
-                      <button type="submit">
+                      <button type="submit" disabled={sending}>
                         <ChevronIcon />
-                        SUBMIT
+                        {sending ? 'SENDING' : 'SUBMIT'}
                       </button>
-                      <button type="reset">RESET</button>
+                      <button type="reset" disabled={sending}>
+                        RESET
+                      </button>
                     </div>
                   </form>
                 </>

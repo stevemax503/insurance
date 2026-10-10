@@ -1580,12 +1580,24 @@ p.coming-copy {
   resize: vertical;
 }
 
+.contact-form-error {
+  grid-column: 1 / -1;
+  color: #e10600;
+  font-size: 14px;
+  margin: 0;
+}
+
 .contact-actions {
   grid-column: 1 / -1;
   display: flex;
   align-items: center;
   gap: 18px;
   margin-top: 10px;
+}
+
+.contact-actions button:disabled {
+  opacity: 0.6;
+  cursor: default;
 }
 
 .contact-actions button[type='submit'] {
