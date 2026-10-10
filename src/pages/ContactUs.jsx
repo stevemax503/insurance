@@ -134,14 +134,14 @@ export default function ContactUs() {
               <div className="contact-info-item contact-info-item-center">
                 <a
                   className="contact-icon"
-                  href="mailto:CustomerServices@OrientInsurance.com.sa"
-                  aria-label="CustomerServices@OrientInsurance.com.sa"
+                  href="mailto:orient@OrientInsurancegroup.com"
+                  aria-label="orient@OrientInsurancegroup.com"
                 >
                   <MailIcon />
                 </a>
                 <h4>
-                  <a href="mailto:CustomerServices@OrientInsurance.com.sa">
-                    CustomerServices@OrientInsurance.com.sa
+                  <a href="mailto:orient@OrientInsurancegroup.com">
+                    orient@OrientInsurancegroup.com
                   </a>
                 </h4>
               </div>

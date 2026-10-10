@@ -13,11 +13,11 @@ export const faqs = [
   },
   {
     q: 'How to cancel and refund Motor policy?',
-    html: '<p>You can submit a cancellation request through the e-services portal, provided that you have a valid reason for cancellation (such as <strong>vehicle sale, replacement insurance policy, or exporting the vehicle outside the Kingdom</strong>).</p><p>If you encounter a technical issue, please send a screenshot of the problem along with the following documents:</p><ul><li>Bank IBAN</li><li>National ID</li><li>Insurance policy document</li><li>Reason for cancellation</li></ul><p>Please send these documents to Customer Services at <strong>CustomerServices@orientinsurance.com.sa</strong>.</p>',
+    html: '<p>You can submit a cancellation request through the e-services portal, provided that you have a valid reason for cancellation (such as <strong>vehicle sale, replacement insurance policy, or exporting the vehicle outside the Kingdom</strong>).</p><p>If you encounter a technical issue, please send a screenshot of the problem along with the following documents:</p><ul><li>Bank IBAN</li><li>National ID</li><li>Insurance policy document</li><li>Reason for cancellation</li></ul><p>Please send these documents to Customer Services at <strong>orient@OrientInsurancegroup.com</strong>.</p>',
   },
   {
     q: 'How to submit a motor claim?',
-    html: '<p>By Email:</p><p>Write to the customer services email <a href="mailto:CustomerServices@OrientInsurance.com.sa"><strong>CustomerServices@OrientInsurance.com.sa</strong></a><strong>) </strong>mentioning the accident number, owner ID and the IBAN Number.</p><p>OR</p><p>Using Najm service:</p><p>You can submit your claim using NAJM portal <a href="https://najm.sa/services/e-services" target="_blank" rel="noreferrer">https://najm.sa/services/e-services</a></p>',
+    html: '<p>By Email:</p><p>Write to the customer services email <a href="mailto:orient@OrientInsurancegroup.com"><strong>orient@OrientInsurancegroup.com</strong></a><strong>) </strong>mentioning the accident number, owner ID and the IBAN Number.</p><p>OR</p><p>Using Najm service:</p><p>You can submit your claim using NAJM portal <a href="https://najm.sa/services/e-services" target="_blank" rel="noreferrer">https://najm.sa/services/e-services</a></p>',
   },
   {
     q: 'What is the compulsory motor insurance policy?',
@@ -25,7 +25,7 @@ export const faqs = [
   },
   {
     q: 'How apply for reimbursement of the Value Added Tax (VAT) amount?',
-    html: '<ul><li>Website: Select "Compensation for Value Added Tax (VAT)" from the <a href="https://general.orientinsurance.com.sa/webserviceportal/" target="_blank" rel="noreferrer">E-service portal</a></li><li>Or Email: Send your request to CustomerServices@OrientInsurance.com.sa</li></ul>',
+    html: '<ul><li>Website: Select "Compensation for Value Added Tax (VAT)" from the <a href="https://general.orientinsurance.com.sa/webserviceportal/" target="_blank" rel="noreferrer">E-service portal</a></li><li>Or Email: Send your request to orient@OrientInsurancegroup.com</li></ul>',
   },
   {
     q: 'How can I request a policy endorsement?',
@@ -33,7 +33,7 @@ export const faqs = [
   },
   {
     q: 'How can I link my insurance policy?',
-    html: '<p>Send a copy of the vehicle registration form to CustomerServices@orientinsurance.com.sa.</p>',
+    html: '<p>Send a copy of the vehicle registration form to orient@OrientInsurancegroup.com.</p>',
   },
   {
     q: 'What is the claim settlement period?',
@@ -45,7 +45,7 @@ export const faqs = [
   },
   {
     q: 'How can I obtain a motor insurance quotation for a company?',
-    html: '<p>Send the Commercial Registration and vehicle list to CustomerServices@orientinsurance.com.sa.</p>',
+    html: '<p>Send the Commercial Registration and vehicle list to orient@OrientInsurancegroup.com.</p>',
   },
   {
     q: 'What documents are required for a third-party death claim?',
